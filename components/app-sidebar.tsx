@@ -23,8 +23,8 @@ const data = {
   },
   navMain: [
     {
-      title: "Users",
-      url: "#",
+      title: "Sync Dashboard",
+      url: "/sync-dashboard",
       icon: IconUsers,
     },
   ],

@@ -80,3 +80,14 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 - Aside from generating code, I also heavily use AI in creating documentations. I usually ask for an example on how to document or a template.
 
 - In my opinion, every developer should be able to leverage the use of AI tools when working on a project. If used in the right way _(not just "vibe coding")_, the speed of development as well as learning will be boosted multiple times.
+
+## Future Features 🚀
+
+These features are planned to be added to enhance the application's functionality and user experience:
+
+- **Authentication**
+  - Implement user sign-up and sign-in functionality using **Supabase Auth**. This will ensure that only authorized users can access the dashboard and initiate sync processes.
+  - Integrate **Row Level Security (RLS)** fully with authenticated user IDs to restrict data access based on the logged-in user.
+- **Pagination**
+  - Apply **server-side pagination** to the user data table on the `/sync-dashboard` page. This is crucial for performance and usability once the number of synced users exceeds a few hundred records.
+  - Use **TanStack Query** to efficiently manage the fetching and caching of paginated user lists.

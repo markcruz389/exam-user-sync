@@ -8,7 +8,7 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 
 1. Clone the repository here: `https://github.com/markcruz389/exam-user-sync`.
 2. In the project's root directory, run `pnpm install`. Make sure you have **pnpm** installed on your system.
-3. In the project's root directory, create a `.env.local` file. Copy the variables needed from the `env-example` file included in **the repo**. Note that some variables are secrets, so I'll provide **them** in a separate file that will be shared only for people that have permissions.
+3. In the project's root directory, create a `.env.local` file. Copy the variables needed from the `env-example` file included in **the repo**. _Note that some variables are secrets, so I'll provide **them** in a separate file that will be shared only for people that have permissions._
 
 ---
 
@@ -21,7 +21,16 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 
 ## Technologies Used and Architectural Choices
 
-### 1. Supabase _(Database)_ with Supabase JS _(Query Builder)_
+### 1. PNPM _(Package Manager)_
+
+- I decided to use **PNPM** since it's faster and more efficient compared to **NPM**. I also like that it has excellent monorepo support.
+
+| Pros                     | Cons                  |
+| :----------------------- | :-------------------- |
+| **Faster installations** | **Smaller ecosystem** |
+| **Efficient disk space** |                       |
+
+### 2. Supabase _(Database)_ with Supabase JS _(Query Builder)_
 
 - I decided to use this for efficiency and development speed since I am used to using this whenever I need to work on something fast, like creating an **MVP** or **Proof of Concept**. Also, since **Supabase** is an all-in-one backend solution, it's easy to create future features that can be added **to** this app, such as _(Authentication, Realtime Updates, Cloud Storage, and Database Migrations)_.
 - I made sure to generate the database types using **Supabase CLI** to have type checking for each **Supabase** query I create **with** Supabase JS.
@@ -32,7 +41,7 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 | **Faster development**          | **Possible vendor lock-in** |
 | **All-in-one backend provider** |                             |
 
-### 2. TanStack Query _(Data fetching & State management)_
+### 3. TanStack Query _(Data fetching & State management)_
 
 - I decided to use this for simple handling of cache and query state. I know that there's another recommended way to do data fetching in **Next.js**, which uses **React's `use` hook**. I'm still new to that, so I opted to use what I'm most comfortable with.
 
@@ -41,7 +50,7 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 | **Simplified data fetching and state management.** | **Additional dependency** |
 | **Automatic caching and deduplication.**           |                           |
 
-### 3. ShadcnUI _(Headless Components)_ & TailwindCSS _(Styling)_
+### 4. ShadcnUI _(Headless Components)_ & TailwindCSS _(Styling)_
 
 - **This** choice I made **because** it's what I'm most comfortable working with. Also, these are popular choices when creating a **web app** nowadays.
 
@@ -50,7 +59,7 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 | **No vendor lock-in**          | **Maintenance burden** |
 | **Improves development speed** |                        |
 
-### 4. Zod _(Validation Library)_
+### 5. Zod _(Validation Library)_
 
 - I decided to use **Zod** for validating **API** payloads and responses for **an** added layer of runtime checking.
 

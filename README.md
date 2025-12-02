@@ -72,3 +72,11 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 ## Notes
 
 - **Anti-pattern**: using server actions with route handlers. Ideally, we can just use server actions, but in this case, we are demonstrating hitting an **API** endpoint.
+
+## AI Usage
+
+- I used **Cursor** while working on this project and switched between **Gemini 3** and **Composer 1** models. I did not **"vibe code"** this project; instead, I used an **AI-Assisted** approach. I only used AI for things that I think I already know how to implement but would take more time if I did it myself, since it's no secret that **LLMs** are way faster when it comes to creating and generating code. For example, when creating the functionality for fetching and displaying the users, I already had in my mind what the pieces needed to implement it were _(table component, API route, custom hook for data fetching, state management, loading and error states, etc...)_. So I just instructed the **LLM** to create the pieces needed to implement the feature. After it generated the code, I made sure to check that it aligned with what I had in my mind. I then tested it to ensure that it worked. Whenever there was something that the **LLM** generated or implemented that was unfamiliar to me, I did my own research to understand why it was used and learn from it.
+
+- Aside from generating code, I also heavily use AI in creating documentations. I usually ask for an example on how to document or a template.
+
+- In my opinion, every developer should be able to leverage the use of AI tools when working on a project. If used in the right way _(not just "vibe coding")_, the speed of development as well as learning will be boosted multiple times.

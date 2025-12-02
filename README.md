@@ -81,7 +81,7 @@ This is a **take-home assessment** for a **Full Stack Developer role** that I am
 
 - In my opinion, every developer should be able to leverage the use of AI tools when working on a project. If used in the right way _(not just "vibe coding")_, the speed of development as well as learning will be boosted multiple times.
 
-## Future Features 🚀
+## Future Features
 
 These features are planned to be added to enhance the application's functionality and user experience:
 
